@@ -7,6 +7,8 @@
 //
 
 #import "AppDelegate.h"
+#import "NavViewController.h"
+#import "IndexViewController.h"
 
 @interface AppDelegate ()
 
@@ -16,7 +18,13 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    
+    self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
+    IndexViewController * indexViewController = [[IndexViewController alloc] init];
+    NavViewController * navViewController = [[NavViewController alloc] initWithRootViewController:indexViewController];
+    self.window.rootViewController = navViewController;
+    [self.window makeKeyAndVisible];
+    
     return YES;
 }
 

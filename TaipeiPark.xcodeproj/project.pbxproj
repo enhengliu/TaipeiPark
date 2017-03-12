@@ -13,6 +13,9 @@
 		675404131E74DC33009C51C8 /* TaipeiPark.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 675404111E74DC33009C51C8 /* TaipeiPark.xcdatamodeld */; };
 		675404151E74DC33009C51C8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 675404141E74DC33009C51C8 /* Assets.xcassets */; };
 		675404181E74DC33009C51C8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 675404161E74DC33009C51C8 /* LaunchScreen.storyboard */; };
+		675404221E74DF7B009C51C8 /* IndexViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 675404201E74DF7B009C51C8 /* IndexViewController.m */; };
+		675404231E74DF7B009C51C8 /* IndexViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 675404211E74DF7B009C51C8 /* IndexViewController.xib */; };
+		675404291E74E0C3009C51C8 /* NavViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 675404281E74E0C3009C51C8 /* NavViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +29,11 @@
 		675404141E74DC33009C51C8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		675404171E74DC33009C51C8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		675404191E74DC33009C51C8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6754041F1E74DF7B009C51C8 /* IndexViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IndexViewController.h; sourceTree = "<group>"; };
+		675404201E74DF7B009C51C8 /* IndexViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IndexViewController.m; sourceTree = "<group>"; };
+		675404211E74DF7B009C51C8 /* IndexViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = IndexViewController.xib; sourceTree = "<group>"; };
+		675404271E74E0C3009C51C8 /* NavViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NavViewController.h; sourceTree = "<group>"; };
+		675404281E74E0C3009C51C8 /* NavViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NavViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,8 +68,13 @@
 			children = (
 				675404081E74DC33009C51C8 /* AppDelegate.h */,
 				675404091E74DC33009C51C8 /* AppDelegate.m */,
+				675404271E74E0C3009C51C8 /* NavViewController.h */,
+				675404281E74E0C3009C51C8 /* NavViewController.m */,
 				6754040B1E74DC33009C51C8 /* ViewController.h */,
 				6754040C1E74DC33009C51C8 /* ViewController.m */,
+				6754041F1E74DF7B009C51C8 /* IndexViewController.h */,
+				675404201E74DF7B009C51C8 /* IndexViewController.m */,
+				675404211E74DF7B009C51C8 /* IndexViewController.xib */,
 				675404141E74DC33009C51C8 /* Assets.xcassets */,
 				675404161E74DC33009C51C8 /* LaunchScreen.storyboard */,
 				675404191E74DC33009C51C8 /* Info.plist */,
@@ -138,6 +151,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				675404231E74DF7B009C51C8 /* IndexViewController.xib in Resources */,
 				675404181E74DC33009C51C8 /* LaunchScreen.storyboard in Resources */,
 				675404151E74DC33009C51C8 /* Assets.xcassets in Resources */,
 			);
@@ -154,6 +168,8 @@
 				675404131E74DC33009C51C8 /* TaipeiPark.xcdatamodeld in Sources */,
 				6754040A1E74DC33009C51C8 /* AppDelegate.m in Sources */,
 				675404071E74DC33009C51C8 /* main.m in Sources */,
+				675404291E74E0C3009C51C8 /* NavViewController.m in Sources */,
+				675404221E74DF7B009C51C8 /* IndexViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
