@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="220" id="KGk-i7-Jjw" customClass="ParkSceneTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="220"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="220"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D66-7S-1xP">
+                        <rect key="frame" x="8" y="8" width="304" height="20"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                        <color key="textColor" red="0.82745098039999998" green="0.20000000000000001" blue="0.094117647060000004" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DzB-wP-JS8">
+                        <rect key="frame" x="8" y="35" width="304" height="20"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yyy-yT-jf3">
+                        <rect key="frame" x="8" y="191" width="304" height="20"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" image="placeholder-image.png" translatesAutoresizingMaskIntoConstraints="NO" id="KCh-Rg-wCv">
+                        <rect key="frame" x="22" y="69" width="278" height="102"/>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="KCh-Rg-wCv" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="14" id="0ZS-os-o63"/>
+                    <constraint firstItem="yyy-yT-jf3" firstAttribute="top" secondItem="KCh-Rg-wCv" secondAttribute="bottom" constant="20" id="A5F-w4-imz"/>
+                    <constraint firstItem="DzB-wP-JS8" firstAttribute="leading" secondItem="D66-7S-1xP" secondAttribute="leading" id="AZa-RW-y2m"/>
+                    <constraint firstItem="KCh-Rg-wCv" firstAttribute="top" secondItem="DzB-wP-JS8" secondAttribute="bottom" constant="14" id="DAh-sA-c0H"/>
+                    <constraint firstItem="DzB-wP-JS8" firstAttribute="trailing" secondItem="D66-7S-1xP" secondAttribute="trailing" id="H6C-GM-T4j"/>
+                    <constraint firstItem="D66-7S-1xP" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="HJg-kO-9ub"/>
+                    <constraint firstItem="D66-7S-1xP" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="JhC-Qb-gT6"/>
+                    <constraint firstItem="D66-7S-1xP" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="Lgg-g7-bAa"/>
+                    <constraint firstItem="KCh-Rg-wCv" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" constant="1" id="NLu-kE-1wN"/>
+                    <constraint firstItem="yyy-yT-jf3" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="NZT-fY-p5I"/>
+                    <constraint firstAttribute="trailing" secondItem="yyy-yT-jf3" secondAttribute="trailing" constant="8" id="Nc2-GA-PKU"/>
+                    <constraint firstAttribute="bottom" secondItem="yyy-yT-jf3" secondAttribute="bottom" constant="8.5" id="PGM-fb-aRn"/>
+                    <constraint firstItem="DzB-wP-JS8" firstAttribute="top" secondItem="D66-7S-1xP" secondAttribute="bottom" constant="6.6699999999999999" id="YNk-P5-oSh"/>
+                    <constraint firstItem="yyy-yT-jf3" firstAttribute="top" relation="greaterThanOrEqual" secondItem="KCh-Rg-wCv" secondAttribute="bottom" constant="19.670000000000002" id="iIZ-5i-Rln"/>
+                    <constraint firstAttribute="trailing" secondItem="D66-7S-1xP" secondAttribute="trailing" constant="8" id="nyZ-bY-qt3"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="image" destination="KCh-Rg-wCv" id="twP-a4-S9u"/>
+                <outlet property="introductionLabel" destination="DzB-wP-JS8" id="qg5-9D-ToD"/>
+                <outlet property="nameLabel" destination="D66-7S-1xP" id="F9c-8r-pfg"/>
+                <outlet property="parkLabel" destination="yyy-yT-jf3" id="khi-Gj-QKL"/>
+            </connections>
+            <point key="canvasLocation" x="17" y="213"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="placeholder-image.png" width="800" height="600"/>
+    </resources>
+</document>

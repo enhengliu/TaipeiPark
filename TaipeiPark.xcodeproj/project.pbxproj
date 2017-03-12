@@ -20,6 +20,9 @@
 		6764116C1E750FE000670C3F /* TPCoreDataHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 6764116B1E750FE000670C3F /* TPCoreDataHelper.m */; };
 		676411711E751F2A00670C3F /* ParkScene+CoreDataClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 6764116E1E751F2A00670C3F /* ParkScene+CoreDataClass.m */; };
 		676411721E751F2A00670C3F /* ParkScene+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 676411701E751F2A00670C3F /* ParkScene+CoreDataProperties.m */; };
+		67BC7EEC1E75B92E00A0A641 /* ParkSceneTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 67BC7EEA1E75B92E00A0A641 /* ParkSceneTableViewCell.m */; };
+		67BC7EED1E75B92E00A0A641 /* ParkSceneTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 67BC7EEB1E75B92E00A0A641 /* ParkSceneTableViewCell.xib */; };
+		67BC7EEF1E75C61300A0A641 /* placeholder-image.png in Resources */ = {isa = PBXBuildFile; fileRef = 67BC7EEE1E75C61300A0A641 /* placeholder-image.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +49,11 @@
 		6764116F1E751F2A00670C3F /* ParkScene+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "ParkScene+CoreDataProperties.h"; path = "../ParkScene+CoreDataProperties.h"; sourceTree = "<group>"; };
 		676411701E751F2A00670C3F /* ParkScene+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "ParkScene+CoreDataProperties.m"; path = "../ParkScene+CoreDataProperties.m"; sourceTree = "<group>"; };
 		676411731E75232C00670C3F /* ApiDefine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ApiDefine.h; sourceTree = "<group>"; };
+		67BC7EE81E75AEEE00A0A641 /* TPCoreDataDefine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TPCoreDataDefine.h; sourceTree = "<group>"; };
+		67BC7EE91E75B92E00A0A641 /* ParkSceneTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ParkSceneTableViewCell.h; sourceTree = "<group>"; };
+		67BC7EEA1E75B92E00A0A641 /* ParkSceneTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ParkSceneTableViewCell.m; sourceTree = "<group>"; };
+		67BC7EEB1E75B92E00A0A641 /* ParkSceneTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ParkSceneTableViewCell.xib; sourceTree = "<group>"; };
+		67BC7EEE1E75C61300A0A641 /* placeholder-image.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "placeholder-image.png"; path = "../placeholder-image.png"; sourceTree = "<group>"; };
 		AA8513369F6CF1C6F760EDE3 /* libPods-TaipeiPark.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TaipeiPark.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA4D6B6222CE76E24208C2D7 /* Pods-TaipeiPark.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TaipeiPark.release.xcconfig"; path = "Pods/Target Support Files/Pods-TaipeiPark/Pods-TaipeiPark.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -107,6 +115,9 @@
 				6754041F1E74DF7B009C51C8 /* IndexViewController.h */,
 				675404201E74DF7B009C51C8 /* IndexViewController.m */,
 				675404211E74DF7B009C51C8 /* IndexViewController.xib */,
+				67BC7EE91E75B92E00A0A641 /* ParkSceneTableViewCell.h */,
+				67BC7EEA1E75B92E00A0A641 /* ParkSceneTableViewCell.m */,
+				67BC7EEB1E75B92E00A0A641 /* ParkSceneTableViewCell.xib */,
 				676411691E74FD1200670C3F /* CoreData */,
 				6754042B1E74E87E009C51C8 /* Network */,
 				675404141E74DC33009C51C8 /* Assets.xcassets */,
@@ -121,6 +132,7 @@
 		675404051E74DC33009C51C8 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				67BC7EEE1E75C61300A0A641 /* placeholder-image.png */,
 				675404061E74DC33009C51C8 /* main.m */,
 			);
 			name = "Supporting Files";
@@ -139,6 +151,7 @@
 		676411691E74FD1200670C3F /* CoreData */ = {
 			isa = PBXGroup;
 			children = (
+				67BC7EE81E75AEEE00A0A641 /* TPCoreDataDefine.h */,
 				6764116A1E750FE000670C3F /* TPCoreDataHelper.h */,
 				6764116B1E750FE000670C3F /* TPCoreDataHelper.m */,
 				6764116D1E751F2A00670C3F /* ParkScene+CoreDataClass.h */,
@@ -213,6 +226,8 @@
 			files = (
 				675404231E74DF7B009C51C8 /* IndexViewController.xib in Resources */,
 				675404181E74DC33009C51C8 /* LaunchScreen.storyboard in Resources */,
+				67BC7EED1E75B92E00A0A641 /* ParkSceneTableViewCell.xib in Resources */,
+				67BC7EEF1E75C61300A0A641 /* placeholder-image.png in Resources */,
 				675404151E74DC33009C51C8 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -280,6 +295,7 @@
 				675404291E74E0C3009C51C8 /* NavViewController.m in Sources */,
 				675404221E74DF7B009C51C8 /* IndexViewController.m in Sources */,
 				6754042E1E74E89B009C51C8 /* TPDataManager.m in Sources */,
+				67BC7EEC1E75B92E00A0A641 /* ParkSceneTableViewCell.m in Sources */,
 				676411721E751F2A00670C3F /* ParkScene+CoreDataProperties.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

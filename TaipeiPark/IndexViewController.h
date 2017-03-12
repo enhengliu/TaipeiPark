@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface IndexViewController : UIViewController
+@interface IndexViewController : UIViewController<UITableViewDelegate,UITableViewDataSource>
+@property (strong, nonatomic) IBOutlet UITableView *parkSceneTableView;
+@property (strong, nonatomic) IBOutlet UILabel *parkSceneName;
 
 @end
