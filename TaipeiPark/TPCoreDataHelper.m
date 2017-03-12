@@ -7,7 +7,7 @@
 //
 
 #import "TPCoreDataHelper.h"
-
+#import "ParkScene+CoreDataClass.h"
 @implementation TPCoreDataHelper
 
 
@@ -121,7 +121,7 @@ static TPCoreDataHelper * manager = nil;
     
     NSFetchRequest * request = [NSFetchRequest fetchRequestWithEntityName:entity];
     [request setPredicate:predicate];
-    
+
     if (key){
         NSSortDescriptor * sortDestor = [[NSSortDescriptor alloc]initWithKey:key ascending:isAscending];
         [request setSortDescriptors:@[sortDestor]];
@@ -155,12 +155,12 @@ static TPCoreDataHelper * manager = nil;
         NSLog(@"error:%@ ,%@",error,[error userInfo]);
     }
     
-    
-    for (NSDictionary * results in fetchedResults) {
-        NSLog(@"%@",[results objectForKey:@"parkname"]);
+    NSMutableArray * resultArray = [[NSMutableArray alloc] init];
+    for (NSDictionary * resultDict in fetchedResults) {
+        [resultArray addObject:[resultDict objectForKey:TPCOREDATA_KEY_PARKNAME]];
     }
 
-    return fetchedResults;
+    return resultArray;
 }
 
 -(void)deleteObjectsWithEntity:(NSString *)entity {

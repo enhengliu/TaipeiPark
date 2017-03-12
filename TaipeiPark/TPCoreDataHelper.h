@@ -8,10 +8,9 @@
 
 #import <Foundation/Foundation.h>
 #import <CoreData/CoreData.h>
+#import "TPCoreDataDefine.h"
 
 
-#define TPDATABASENAME  @"TaipeiPark"
-#define TPENTITYNAME    @"ParkScene"
 
 @interface TPCoreDataHelper : NSObject
 
