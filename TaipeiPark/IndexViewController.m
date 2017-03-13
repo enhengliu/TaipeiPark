@@ -14,6 +14,7 @@
 #import "ParkSceneTableViewCell.h"
 #import <UIImageView+AFNetworking.h>
 #import "ParkSceneDetailViewController.h"
+#import "MBProgressHUD.h"
 
 @interface IndexViewController ()
 
@@ -23,6 +24,7 @@
     
     NSArray * parkArray;
     NSMutableArray * parkSceneArray;
+    MBProgressHUD * loadingView;
 
 }
 
@@ -51,6 +53,8 @@
     self.parkSceneTableView.estimatedRowHeight = 152;
     self.parkSceneTableView.rowHeight = UITableViewAutomaticDimension;
     [self.parkSceneTableView registerNib:[UINib nibWithNibName:@"ParkSceneTableViewCell" bundle:nil] forCellReuseIdentifier:PARKSCENE_CELL];
+    loadingView = [[MBProgressHUD alloc] initWithView:self.view];
+    [self.view addSubview:loadingView];
 
 }
 
@@ -63,6 +67,8 @@
 #pragma mark - Network Method
 
 -(void)getDataWithUrl:(NSString *)url {
+    
+    [loadingView show:true];
     
     [[TPDataManager shareManager] getDataWithUrl:url parameters:nil success:^(id responseObject){
         
@@ -91,9 +97,13 @@
             [parkSceneArray addObject:parkScenes];
         }
      
+        if (!loadingView.hidden) {
+            [loadingView hide:true];
+        }
         [self.parkSceneTableView reloadData];
 
     } failure:^(NSError *error){
+        [loadingView hide:true];
     }];
     
 }
