@@ -23,6 +23,10 @@
 		67BC7EEC1E75B92E00A0A641 /* ParkSceneTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 67BC7EEA1E75B92E00A0A641 /* ParkSceneTableViewCell.m */; };
 		67BC7EED1E75B92E00A0A641 /* ParkSceneTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 67BC7EEB1E75B92E00A0A641 /* ParkSceneTableViewCell.xib */; };
 		67BC7EEF1E75C61300A0A641 /* placeholder-image.png in Resources */ = {isa = PBXBuildFile; fileRef = 67BC7EEE1E75C61300A0A641 /* placeholder-image.png */; };
+		67BC7EF31E7612FD00A0A641 /* ParkSceneDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 67BC7EF11E7612FD00A0A641 /* ParkSceneDetailViewController.m */; };
+		67BC7EF41E7612FD00A0A641 /* ParkSceneDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 67BC7EF21E7612FD00A0A641 /* ParkSceneDetailViewController.xib */; };
+		67BC7EF91E763DB200A0A641 /* SceneCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 67BC7EF71E763DB200A0A641 /* SceneCollectionViewCell.m */; };
+		67BC7EFA1E763DB200A0A641 /* SceneCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 67BC7EF81E763DB200A0A641 /* SceneCollectionViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -54,6 +58,12 @@
 		67BC7EEA1E75B92E00A0A641 /* ParkSceneTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ParkSceneTableViewCell.m; sourceTree = "<group>"; };
 		67BC7EEB1E75B92E00A0A641 /* ParkSceneTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ParkSceneTableViewCell.xib; sourceTree = "<group>"; };
 		67BC7EEE1E75C61300A0A641 /* placeholder-image.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "placeholder-image.png"; path = "../placeholder-image.png"; sourceTree = "<group>"; };
+		67BC7EF01E7612FD00A0A641 /* ParkSceneDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ParkSceneDetailViewController.h; sourceTree = "<group>"; };
+		67BC7EF11E7612FD00A0A641 /* ParkSceneDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ParkSceneDetailViewController.m; sourceTree = "<group>"; };
+		67BC7EF21E7612FD00A0A641 /* ParkSceneDetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ParkSceneDetailViewController.xib; sourceTree = "<group>"; };
+		67BC7EF61E763DB200A0A641 /* SceneCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SceneCollectionViewCell.h; sourceTree = "<group>"; };
+		67BC7EF71E763DB200A0A641 /* SceneCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SceneCollectionViewCell.m; sourceTree = "<group>"; };
+		67BC7EF81E763DB200A0A641 /* SceneCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SceneCollectionViewCell.xib; sourceTree = "<group>"; };
 		AA8513369F6CF1C6F760EDE3 /* libPods-TaipeiPark.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TaipeiPark.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA4D6B6222CE76E24208C2D7 /* Pods-TaipeiPark.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TaipeiPark.release.xcconfig"; path = "Pods/Target Support Files/Pods-TaipeiPark/Pods-TaipeiPark.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -115,9 +125,10 @@
 				6754041F1E74DF7B009C51C8 /* IndexViewController.h */,
 				675404201E74DF7B009C51C8 /* IndexViewController.m */,
 				675404211E74DF7B009C51C8 /* IndexViewController.xib */,
-				67BC7EE91E75B92E00A0A641 /* ParkSceneTableViewCell.h */,
-				67BC7EEA1E75B92E00A0A641 /* ParkSceneTableViewCell.m */,
-				67BC7EEB1E75B92E00A0A641 /* ParkSceneTableViewCell.xib */,
+				67BC7EF01E7612FD00A0A641 /* ParkSceneDetailViewController.h */,
+				67BC7EF11E7612FD00A0A641 /* ParkSceneDetailViewController.m */,
+				67BC7EF21E7612FD00A0A641 /* ParkSceneDetailViewController.xib */,
+				67BC7EF51E76130D00A0A641 /* CustomCell */,
 				676411691E74FD1200670C3F /* CoreData */,
 				6754042B1E74E87E009C51C8 /* Network */,
 				675404141E74DC33009C51C8 /* Assets.xcassets */,
@@ -160,6 +171,19 @@
 				676411701E751F2A00670C3F /* ParkScene+CoreDataProperties.m */,
 			);
 			name = CoreData;
+			sourceTree = "<group>";
+		};
+		67BC7EF51E76130D00A0A641 /* CustomCell */ = {
+			isa = PBXGroup;
+			children = (
+				67BC7EE91E75B92E00A0A641 /* ParkSceneTableViewCell.h */,
+				67BC7EEA1E75B92E00A0A641 /* ParkSceneTableViewCell.m */,
+				67BC7EEB1E75B92E00A0A641 /* ParkSceneTableViewCell.xib */,
+				67BC7EF61E763DB200A0A641 /* SceneCollectionViewCell.h */,
+				67BC7EF71E763DB200A0A641 /* SceneCollectionViewCell.m */,
+				67BC7EF81E763DB200A0A641 /* SceneCollectionViewCell.xib */,
+			);
+			name = CustomCell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -224,6 +248,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				67BC7EFA1E763DB200A0A641 /* SceneCollectionViewCell.xib in Resources */,
+				67BC7EF41E7612FD00A0A641 /* ParkSceneDetailViewController.xib in Resources */,
 				675404231E74DF7B009C51C8 /* IndexViewController.xib in Resources */,
 				675404181E74DC33009C51C8 /* LaunchScreen.storyboard in Resources */,
 				67BC7EED1E75B92E00A0A641 /* ParkSceneTableViewCell.xib in Resources */,
@@ -294,7 +320,9 @@
 				676411711E751F2A00670C3F /* ParkScene+CoreDataClass.m in Sources */,
 				675404291E74E0C3009C51C8 /* NavViewController.m in Sources */,
 				675404221E74DF7B009C51C8 /* IndexViewController.m in Sources */,
+				67BC7EF31E7612FD00A0A641 /* ParkSceneDetailViewController.m in Sources */,
 				6754042E1E74E89B009C51C8 /* TPDataManager.m in Sources */,
+				67BC7EF91E763DB200A0A641 /* SceneCollectionViewCell.m in Sources */,
 				67BC7EEC1E75B92E00A0A641 /* ParkSceneTableViewCell.m in Sources */,
 				676411721E751F2A00670C3F /* ParkScene+CoreDataProperties.m in Sources */,
 			);

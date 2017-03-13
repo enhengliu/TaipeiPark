@@ -13,6 +13,7 @@
 #import "ParkScene+CoreDataClass.h"
 #import "ParkSceneTableViewCell.h"
 #import <UIImageView+AFNetworking.h>
+#import "ParkSceneDetailViewController.h"
 
 @interface IndexViewController ()
 
@@ -44,7 +45,7 @@
 #pragma mark - Init
 
 -(void)initUI {
-    
+    self.title = @"臺北公園景點";
     self.parkSceneTableView.delegate = self;
     self.parkSceneTableView.dataSource = self;
     self.parkSceneTableView.estimatedRowHeight = 152;
@@ -122,12 +123,12 @@
     cell.contentView.translatesAutoresizingMaskIntoConstraints = NO;
     cell.introductionLabel.text = parkScene.introduction;
     CGSize size = [cell.contentView systemLayoutSizeFittingSize:UILayoutFittingCompressedSize];
-    NSLog(@"%f",size.height);
     return 1  + size.height;
 }
 
 
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    
     ParkSceneTableViewCell * cell = [tableView dequeueReusableCellWithIdentifier:PARKSCENE_CELL forIndexPath:indexPath];
     ParkScene * parkScene = [[parkSceneArray objectAtIndex:indexPath.section] objectAtIndex:indexPath.row];
     cell.nameLabel.text = parkScene.name;
@@ -138,6 +139,17 @@
     cell.introductionLabel.text = parkScene.introduction;
     return cell;
 
+}
+
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    
+   ParkSceneDetailViewController * parkSceneDetailViewController = [[ParkSceneDetailViewController alloc] init];
+    ParkScene * parkScene = [[parkSceneArray objectAtIndex:indexPath.section] objectAtIndex:indexPath.row];
+
+    parkSceneDetailViewController.name = parkScene.name;
+    parkSceneDetailViewController.identity = parkScene.id;
+    [self.navigationController pushViewController:parkSceneDetailViewController animated:true];
+    
 }
 
 @end
